@@ -1,7 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      Tab 2
+      O Pote
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +16,38 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Card</ion-title>
+      </ion-toolbar>
+    </ion-header>,
+    <ion-content fullscreen>
+      
+      <ion-card>
+        <ion-slides pager="true" [options]="slideOpts">
+          <ion-slide>
+            <img src="assets/img/pote1.jpg" />
+          </ion-slide>
+          <ion-slide>
+            <img src="assets/img/pote1.jpg" />
+          </ion-slide>
+          <ion-slide>
+            <img src="assets/img/pote1.jpg" />
+          </ion-slide>
+        </ion-slides>
+        <ion-card-header>
+          <ion-card-subtitle>Restaurante O Pote</ion-card-subtitle>
+          <ion-card-title>Sobre Nós</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Somos um Restaurante...</p>
+        </ion-card-content>
+      </ion-card>
+
+
+    </ion-content>
+  </ion-app>
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
 </ion-content>

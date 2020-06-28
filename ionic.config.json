@@ -1,5 +1,7 @@
 {
   "name": "O Pote",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

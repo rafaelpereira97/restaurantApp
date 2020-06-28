@@ -1,3 +1,17 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>O Pote</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item><ion-icon name="home-outline"></ion-icon> <a style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">A Nossa História</a></ion-item>
+        <ion-item><ion-icon name="images-outline"></ion-icon> <a style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Galeria de Fotos</a></ion-item>
+        <ion-item> <ion-icon name="logo-facebook"></ion-icon> <a href="https://www.facebook.com/opotepetiscosecompanhia" style="color: black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Facebook</a></ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
